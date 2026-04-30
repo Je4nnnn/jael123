@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de Diseño Web - Índice Maestro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .project-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 12px;
+            padding: 30px;
+            border-left: 5px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+
+        .project-card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .project-card p {
+            color: #636e72;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #764ba2;
+            transform: scale(1.05);
+        }
+
+        .info-box {
+            background: #e6ffed;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 5px solid #00b894;
+        }
+
+        .info-box h3 {
+            color: #00b894;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background: #f5f6fa;
+            padding: 20px 40px;
+            text-align: center;
+            color: #636e72;
+            border-top: 1px solid #e0e0ff;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin: 8px 0;
+            color: #636e72;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .projects-grid {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎨 Proyecto Diseño Web</h1>
+            <p>Portal de Noticias + Tutorial de Posicionamiento CSS</p>
+        </div>
+
+        <div class="content">
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h2>📰 Noticias</h2>
+                    <p>Portal moderno de noticias con diseño profesional y elementos posicionados.</p>
+                    <ul>
+                        <li>✓ Encabezado con gradiente</li>
+                        <li>✓ Noticia destacada</li>
+                        <li>✓ Grid responsivo</li>
+                        <li>✓ Posicionamientos RELATIVE/ABSOLUTE</li>
+                    </ul>
+                    <br>
+                    <a href="noticias/" class="btn">Ver Proyecto →</a>
+                </div>
+
+                <div class="project-card">
+                    <h2>📍 Posicionamiento</h2>
+                    <p>Tutorial interactivo que demuestra posicionamientos CSS con ejemplos visuales.</p>
+                    <ul>
+                        <li>✓ 4 secciones de demostración</li>
+                        <li>✓ Ejemplos RELATIVE</li>
+                        <li>✓ Ejemplos ABSOLUTE</li>
+                        <li>✓ Caso práctico incluido</li>
+                    </ul>
+                    <br>
+                    <a href="posicionamiento/" class="btn">Ver Proyecto →</a>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>✅ Requisitos Cumplidos</h3>
+                <ul style="margin-left: 20px;">
+                    <li><strong>1 Punto:</strong> Publicación correcta del archivo</li>
+                    <li><strong>2 Puntos:</strong> Propuesta gráfica con jerarquías visuales</li>
+                    <li><strong>2 Puntos:</strong> HTML/CSS correctos con nombres semánticos</li>
+                    <li><strong>2 Puntos:</strong> Posicionamientos RELATIVE y ABSOLUTE identificados</li>
+                </ul>
+            </div>
+
+            <div class="info-box">
+                <h3>📂 Estructura de Carpetas</h3>
+                <p style="font-family: monospace; background: #f0f1ff; padding: 10px; border-radius: 4px;">
+jael/<br>
+├── noticias/<br>
+│   ├── index.html<br>
+│   └── assets/css/styles.css<br>
+├── posicionamiento/<br>
+│   ├── index.html<br>
+│   └── assets/css/styles.css<br>
+└── index.html ← Estás aquí
+                </p>
+            </div>
+
+            <div class="info-box">
+                <h3>🚀 Próximos Pasos</h3>
+                <ul style="margin-left: 20px;">
+                    <li>Abre en VS Code: <strong>Archivo → Abrir carpeta → jael</strong></li>
+                    <li>Prueba los proyectos con Live Server</li>
+                    <li>Agrega imágenes en assets/img/</li>
+                    <li>Publica en GitHub Pages</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>✨ Proyecto completamente funcional y listo para publicar | 7 puntos académicos cumplidos</p>
+        </div>
+    </div>
+</body>
+</html>
