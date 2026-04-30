@@ -3,120 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexo Noticias - Información Actualizada</title>
+    <title>El pinguino de Humboldt - Especie chilena en riesgo</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <!-- Encabezado principal con logo y navegación -->
     <header class="main-header">
         <div class="header-container">
-            <h1 class="site-title">NEXO</h1>
-            <p class="tagline">Noticias que importan</p>
-            <!-- Elemento con posicionamiento ABSOLUTE - Indicador decorativo -->
-            <span class="header-accent">●</span>
+            <p class="eyebrow">Biodiversidad chilena</p>
+            <h1 class="site-title">El pinguino de Humboldt</h1>
+            <p class="tagline">Una especie chilena que lucha por sobrevivir</p>
+            <span class="header-accent" aria-hidden="true"></span>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav" aria-label="Secciones principales">
             <ul class="nav-list">
-                <li><a href="#" class="nav-link">Inicio</a></li>
-                <li><a href="#" class="nav-link">Tecnología</a></li>
-                <li><a href="#" class="nav-link">Política</a></li>
-                <li><a href="#" class="nav-link">Cultura</a></li>
+                <li><a href="#panorama" class="nav-link">Panorama</a></li>
+                <li><a href="#amenazas" class="nav-link">Amenazas</a></li>
+                <li><a href="#proteccion" class="nav-link">Proteccion</a></li>
+                <li><a href="#importancia" class="nav-link">Importancia</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="main-content">
-        <!-- Sección destacada con posicionamiento RELATIVE -->
-        <section class="featured-story">
+        <section class="featured-story" id="panorama">
             <article class="featured-article">
                 <div class="featured-image-container">
-                    <img src="assets/img/featured.jpg" alt="Imagen destacada principal">
-                    <!-- Elemento con posicionamiento ABSOLUTE - Etiqueta de categoría -->
-                    <span class="category-badge">Tecnología</span>
+                    <img src="assets/img/featured.jpg" alt="Pinguino de Humboldt sobre rocas costeras">
+                    <span class="category-badge">Conservacion</span>
                 </div>
                 <div class="featured-content">
-                    <h2 class="featured-title">Revolucionarios avances en inteligencia artificial transforman industrias globales</h2>
-                    <p class="featured-excerpt">Los últimos desarrollos en tecnología de IA están cambiando la forma en que trabajamos y vivimos.</p>
-                    <time class="publish-date">29 de abril de 2026</time>
+                    <p class="story-kicker">Especie chilena en riesgo</p>
+                    <h2 class="featured-title">Chile concentra la mayor parte de las colonias del pinguino de Humboldt y su supervivencia depende de medidas urgentes.</h2>
+                    <p class="featured-excerpt">La disminucion de colonias, la pesca, la contaminacion, el cambio climatico y la perdida de habitat mantienen a esta ave marina en una situacion critica.</p>
+                    <time class="publish-date" datetime="2026-04-29">29 de abril de 2026</time>
                 </div>
             </article>
         </section>
 
-        <!-- Grid de noticias secundarias -->
-        <section class="news-grid">
-            <h2 class="section-title">Últimas Noticias</h2>
-            
+        <section class="stats-strip" aria-label="Cifras clave">
+            <article class="stat-card">
+                <span class="stat-value">89%</span>
+                <p class="stat-label">de las colonias mundiales estan en Chile, segun CONAF.</p>
+            </article>
+            <article class="stat-card">
+                <span class="stat-value">2.500</span>
+                <p class="stat-label">parejas reproductivas como maximo estimado en el plan oficial.</p>
+            </article>
+            <article class="stat-card">
+                <span class="stat-value">2024</span>
+                <p class="stat-label">ano en que se oficializo el Plan RECOGE del pinguino de Humboldt.</p>
+            </article>
+        </section>
+
+        <section class="news-grid" id="amenazas">
+            <h2 class="section-title">Amenazas y contexto actual</h2>
+
             <article class="news-card">
                 <div class="card-image-container">
-                    <img src="assets/img/news1.jpg" alt="Noticia 1">
-                    <!-- Elemento con posicionamiento ABSOLUTE - Etiqueta -->
-                    <span class="breaking-badge">ÚLTIMA HORA</span>
+                    <img src="assets/img/news1.jpg" alt="Costa rocosa afectada por actividad humana">
+                    <span class="breaking-badge">Alerta</span>
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title">Descubrimiento científico revoluciona medicina moderna</h3>
-                    <p class="card-excerpt">Investigadores descubren nuevo tratamiento para enfermedades crónicas.</p>
+                    <h3 class="card-title">Perdida de habitat y zonas de nidificacion</h3>
+                    <p class="card-excerpt">La destruccion de espacios de reproduccion y la intervencion humana reducen la estabilidad de sus principales colonias.</p>
                     <footer class="card-meta">
-                        <span class="author-info">Por Dr. Carlos López</span>
-                        <span class="read-time">5 min lectura</span>
+                        <span class="author-info">Habitat costero</span>
+                        <span class="read-time">Impacto directo</span>
                     </footer>
                 </div>
             </article>
 
             <article class="news-card">
                 <div class="card-image-container">
-                    <img src="assets/img/news2.jpg" alt="Noticia 2">
-                    <!-- Elemento con posicionamiento ABSOLUTE - Etiqueta -->
-                    <span class="category-label">Política</span>
+                    <img src="assets/img/news2.jpg" alt="Redes de pesca en el mar">
+                    <span class="category-label">Pesca</span>
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title">Nuevas políticas ambientales impactan mercados internacionales</h3>
-                    <p class="card-excerpt">Gobiernos se unen para enfrentar crisis climática global.</p>
+                    <h3 class="card-title">Competencia por alimento y captura incidental</h3>
+                    <p class="card-excerpt">La sobrepresion pesquera y las redes afectan el acceso a alimento y elevan el riesgo de mortalidad accidental.</p>
                     <footer class="card-meta">
-                        <span class="author-info">Por María González</span>
-                        <span class="read-time">7 min lectura</span>
+                        <span class="author-info">Presion humana</span>
+                        <span class="read-time">Riesgo constante</span>
                     </footer>
                 </div>
             </article>
 
             <article class="news-card">
                 <div class="card-image-container">
-                    <img src="assets/img/news3.jpg" alt="Noticia 3">
-                    <!-- Elemento con posicionamiento ABSOLUTE - Etiqueta -->
-                    <span class="category-label">Cultura</span>
+                    <img src="assets/img/news3.jpg" alt="Mar con residuos y aves costeras">
+                    <span class="category-label">Clima</span>
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title">Festival de arte contemporáneo atrae miles de visitantes</h3>
-                    <p class="card-excerpt">Artistas de todo el mundo se reúnen para celebrar la creatividad.</p>
+                    <h3 class="card-title">Contaminacion, especies invasoras e influenza aviar</h3>
+                    <p class="card-excerpt">La contaminacion marina, los brotes sanitarios y el ingreso de especies invasoras agravan una poblacion ya debilitada.</p>
                     <footer class="card-meta">
-                        <span class="author-info">Por Sofia Rodríguez</span>
-                        <span class="read-time">4 min lectura</span>
+                        <span class="author-info">Amenazas multiples</span>
+                        <span class="read-time">Alta vulnerabilidad</span>
                     </footer>
                 </div>
             </article>
 
-            <article class="news-card">
+            <article class="news-card" id="proteccion">
                 <div class="card-image-container">
-                    <img src="assets/img/news4.jpg" alt="Noticia 4">
-                    <!-- Elemento con posicionamiento ABSOLUTE - Etiqueta -->
-                    <span class="category-label">Deportes</span>
+                    <img src="assets/img/news4.jpg" alt="Zona natural protegida del litoral chileno">
+                    <span class="category-label">Proteccion</span>
                 </div>
                 <div class="card-content">
-                    <h3 class="card-title">Atleta local gana medalla de oro en competencia internacional</h3>
-                    <p class="card-excerpt">El deporte nacional celebra histórico logro en campeonato mundial.</p>
+                    <h3 class="card-title">Monumento Natural y demanda por medidas efectivas</h3>
+                    <p class="card-excerpt">En marzo de 2026 se acordo declararlo Monumento Natural de especie, mientras organizaciones ambientales exigen acciones mas rapidas y efectivas.</p>
                     <footer class="card-meta">
-                        <span class="author-info">Por Juan Martinez</span>
-                        <span class="read-time">3 min lectura</span>
+                        <span class="author-info">Gestion publica</span>
+                        <span class="read-time">Debate abierto</span>
                     </footer>
                 </div>
             </article>
+        </section>
+
+        <section class="analysis-section" id="importancia">
+            <div class="analysis-card">
+                <h2 class="analysis-title">Por que importa conservarlo</h2>
+                <p>El pinguino de Humboldt no solo es una especie carismatica. Su presencia funciona como indicador de la salud de las costas, de las zonas de alimentacion y de los sitios de reproduccion del ecosistema marino del Pacifico suroriental.</p>
+                <p>Cuando sus poblaciones disminuyen, tambien aparecen senales de problemas mayores: sobrepesca, contaminacion, alteraciones climaticas y deterioro del borde costero. Protegerlo implica proteger una red ecologica mas amplia.</p>
+            </div>
+
+            <aside class="analysis-card emphasis-card">
+                <span class="emphasis-label">Dato clave</span>
+                <p class="emphasis-text">Si Chile pierde sus colonias reproductivas, la especie completa queda expuesta a una disminucion mucho mas severa a escala mundial.</p>
+            </aside>
         </section>
     </main>
 
-    <!-- Pie de página -->
     <footer class="main-footer">
         <div class="footer-content">
-            <p>&copy; 2026 Nexo Noticias. Todos los derechos reservados.</p>
-            <p>Comprometidos con el periodismo de calidad</p>
+            <p>&copy; 2026 Conservacion del pinguino de Humboldt</p>
+            <p>Contenido informativo sobre biodiversidad y proteccion ambiental en Chile</p>
         </div>
     </footer>
 </body>

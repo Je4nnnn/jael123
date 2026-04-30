@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto de Diseño Web - Índice Maestro</title>
+    <title>Proyecto de Diseno Web - Indice Maestro</title>
     <style>
         * {
             margin: 0;
@@ -12,7 +12,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
@@ -22,31 +22,31 @@
         }
 
         .container {
-            background: white;
+            background: #ffffff;
             border-radius: 16px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            max-width: 900px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+            max-width: 920px;
             width: 100%;
             overflow: hidden;
         }
 
         .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 60px 40px;
+            color: #ffffff;
+            padding: 56px 40px;
             text-align: center;
         }
 
         .header h1 {
-            font-size: 2.5rem;
+            font-size: 2.4rem;
             margin-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 3px;
         }
 
         .header p {
-            font-size: 1.1rem;
-            opacity: 0.9;
+            font-size: 1.05rem;
+            opacity: 0.92;
         }
 
         .content {
@@ -57,7 +57,6 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            margin-bottom: 40px;
         }
 
         .project-card {
@@ -65,130 +64,110 @@
             border-radius: 12px;
             padding: 30px;
             border-left: 5px solid #667eea;
-            transition: all 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .project-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 28px rgba(102, 126, 234, 0.2);
         }
 
         .project-card h2 {
-            color: #667eea;
-            margin-bottom: 15px;
+            color: #4c63d8;
+            margin-bottom: 14px;
             font-size: 1.5rem;
         }
 
         .project-card p {
-            color: #636e72;
-            margin-bottom: 20px;
-            line-height: 1.6;
+            color: #56616f;
+            margin-bottom: 18px;
+            line-height: 1.65;
+        }
+
+        .project-card ul {
+            margin-left: 20px;
+            color: #56616f;
+        }
+
+        .project-card li {
+            margin: 8px 0;
         }
 
         .btn {
             display: inline-block;
+            margin-top: 18px;
             padding: 12px 24px;
             background: #667eea;
-            color: white;
+            color: #ffffff;
             text-decoration: none;
             border-radius: 6px;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: background 0.3s ease, transform 0.3s ease;
         }
 
         .btn:hover {
             background: #764ba2;
-            transform: scale(1.05);
-        }
-
-        .info-box {
-            background: #e6ffed;
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-left: 5px solid #00b894;
-        }
-
-        .info-box h3 {
-            color: #00b894;
-            margin-bottom: 10px;
+            transform: scale(1.03);
         }
 
         .footer {
             background: #f5f6fa;
-            padding: 20px 40px;
+            padding: 18px 40px;
             text-align: center;
             color: #636e72;
-            border-top: 1px solid #e0e0ff;
-        }
-
-        ul {
-            margin-left: 20px;
-        }
-
-        li {
-            margin: 8px 0;
-            color: #636e72;
+            border-top: 1px solid #e4e7f5;
         }
 
         @media (max-width: 768px) {
             .header h1 {
-                font-size: 1.8rem;
+                font-size: 1.9rem;
             }
 
+            .header,
             .content {
-                padding: 20px;
-            }
-
-            .projects-grid {
-                gap: 20px;
+                padding: 24px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>🎨 Proyecto Diseño Web</h1>
-            <p>Portal de Noticias + Tutorial de Posicionamiento CSS</p>
-        </div>
+        <header class="header">
+            <h1>Proyecto Diseno Web</h1>
+            <p>Pagina informativa sobre el pinguino de Humboldt y tutorial de posicionamiento CSS</p>
+        </header>
 
-        <div class="content">
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h2>📰 Noticias</h2>
-                    <p>Portal moderno de noticias con diseño profesional y elementos posicionados.</p>
+        <main class="content">
+            <section class="projects-grid">
+                <article class="project-card">
+                    <h2>Pinguino de Humboldt</h2>
+                    <p>Pagina editorial sobre una especie chilena en riesgo, con enfoque visual, jerarquia de contenido y bloques informativos.</p>
                     <ul>
-                        <li>✓ Encabezado con gradiente</li>
-                        <li>✓ Noticia destacada</li>
-                        <li>✓ Grid responsivo</li>
-                        <li>✓ Posicionamientos RELATIVE/ABSOLUTE</li>
+                        <li>Historia principal destacada</li>
+                        <li>Cifras y amenazas clave</li>
+                        <li>Diseno responsive</li>
+                        <li>Elementos con posicionamiento relative y absolute</li>
                     </ul>
-                    <br>
-                    <a href="noticias/" class="btn">Ver Proyecto →</a>
-                </div>
+                    <a href="noticias/" class="btn">Ver Proyecto</a>
+                </article>
 
-                <div class="project-card">
-                    <h2>📍 Posicionamiento</h2>
-                    <p>Tutorial interactivo que demuestra posicionamientos CSS con ejemplos visuales.</p>
+                <article class="project-card">
+                    <h2>Posicionamiento</h2>
+                    <p>Tutorial interactivo que demuestra posicionamientos CSS con ejemplos visuales claros y un caso practico aplicado.</p>
                     <ul>
-                        <li>✓ 4 secciones de demostración</li>
-                        <li>✓ Ejemplos RELATIVE</li>
-                        <li>✓ Ejemplos ABSOLUTE</li>
-                        <li>✓ Caso práctico incluido</li>
+                        <li>Demostracion de relative</li>
+                        <li>Demostracion de absolute</li>
+                        <li>Comparativa visual</li>
+                        <li>Caso practico de interfaz</li>
                     </ul>
-                    <br>
-                    <a href="posicionamiento/" class="btn">Ver Proyecto →</a>
-                </div>
-            </div>
+                    <a href="posicionamiento/" class="btn">Ver Proyecto</a>
+                </article>
+            </section>
+        </main>
 
-
-
-            
-
-        <div class="footer">
-            <p>✨ Proyecto completamente funcional y listo para publicar | 7 puntos académicos cumplidos</p>
-        </div>
+        <footer class="footer">
+            <p>Proyecto listo para revisar y publicar</p>
+        </footer>
     </div>
 </body>
 </html>
